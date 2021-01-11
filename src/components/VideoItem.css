@@ -1,0 +1,228 @@
+body{
+    background-color: #0c0a1c !important;
+}
+.error{
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: center;
+    
+}
+.video-item
+{
+    display: flex !important;
+    align-items: center !important;
+   
+
+}
+
+.video-item img{
+    max-width: 150px !important;
+    cursor: pointer;
+}
+
+
+.containerApp
+{
+    width: 100vw;
+    height: 100vh;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  z-index: -20;
+    transition: all 1s ease-in-out;
+}
+.content-header
+{
+    width: 100vw;
+}
+.title-header
+{
+    color: white;
+    font-size: 45px;
+    padding-left:30px;
+    padding-top: 20px;
+    filter: drop-shadow(5px 3px rgba(130,0,190,1));
+}
+.search-bar-container
+{
+    width: 100vw;
+    margin-top:10%;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 300ms ease;
+    margin-bottom: 50px;
+}
+
+.search-input{
+    width: 350px;
+    height:35px;
+    padding:10px;
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+    border: 2px solid;
+    border-image: linear-gradient(45deg, rgb(15, 72, 148), rgb(143, 17, 216)) 1;
+    transition: all 200ms ease-in-out;
+   }
+   .search-input:hover{
+    border-image: linear-gradient(45deg, rgb(143, 17, 216),rgb(15, 72, 148)) 1;
+    transform: scale(1.1);
+
+
+   }
+.label-search{
+    font-size:18px;
+    margin-right: 20px;
+}
+
+.label-search:before
+{
+
+    content: '';
+    width: 5px;
+    height: 60px;
+    margin-top: -20px;
+    margin-right: 10px;
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(22,22,158,1) 0%, rgba(130,0,190,1) 100%); 
+    float: left;
+}
+.playlist-container{
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+  justify-content:center;
+  
+  margin-top: 10%;
+
+}
+.playlist-square{
+
+float: left;
+flex-basis: auto;
+align-self: auto;
+margin: 10px;
+
+}
+
+.item-background{
+    background-color:rgba(6, 24, 54, 0.9);
+    transition:all 500ms ease-in-out;
+    margin:2px
+}
+.item-background:hover{
+    transform: scale(0.97);
+    cursor: pointer;
+}
+.image-color{
+    background-color: rgba(0,0,0,0.5);
+    border:2px solid;
+    border-image: linear-gradient(45deg, rgb(15, 72, 148), rgb(143, 17, 216)) 1;
+}
+.header-color{
+    color: white !important;
+    font-size: 15px;
+    text-shadow: 2px 2px 2px black;
+}
+.video-container{
+   width: 100vw;
+}
+.video-details{
+    max-width:50%;
+   
+    float: left;
+  margin-right: 50px;
+   margin-left: 20px;
+   transition: all 300ms ease-in-out;
+}
+
+.image-list{
+    min-width: 90vw;
+    
+}
+
+.video-description-box{
+    background: rgb(2,0,36);
+background: linear-gradient(97deg, rgba(2,0,36,1) 0%, rgba(12,12,91,1) 100%, rgba(72,1,105,1) 100%) !important; 
+}
+
+.video-title
+{
+    color: white !important;
+    font-size: 20px !important;
+}
+.video-description{
+    color: white !important;
+    
+}
+
+@media only screen and (max-width: 1000px) {
+    .video-details{
+        max-width: 100vw;
+      float: none;
+    margin-left:auto;
+    margin-right: auto;
+       transition: all 300ms ease-in-out;
+    }
+
+    .search-bar-container{
+        width: 100vw;
+        margin-top:10%;
+        color:white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 300ms ease;
+        margin-bottom: 20px;
+    }
+    .search-input{
+        width: 350px;
+        height:35px;
+        padding:10px;
+        color: white;
+        background-color: rgba(0,0,0,0.5);
+        border: 2px solid;
+        border-image: linear-gradient(45deg, rgb(15, 72, 148), rgb(143, 17, 216)) 1;
+        transition: all 200ms ease-in-out;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+       }
+       .search-input:hover{
+        border-image: linear-gradient(45deg, rgb(143, 17, 216),rgb(15, 72, 148)) 1;
+        transform: scale(1.1);
+    
+    
+       }
+    .label-search{
+        font-size:18px;
+
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .label-search:before
+    {
+        display: none;
+    
+    }
+    .playlist-square{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:94vw;
+      
+    }
+  }
