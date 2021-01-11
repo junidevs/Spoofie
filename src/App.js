@@ -31,7 +31,7 @@ class App extends React.Component{
            
             (error) => { 
             this.setState({error:error});
-            console.log(this.state.error);
+            //console.log(this.state.error);
          }
         );
            
