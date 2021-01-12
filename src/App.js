@@ -9,11 +9,16 @@ import './components/VideoItem.css';
 
 
 class App extends React.Component{
-    state ={
-        videos:[],
-        selectedVideo:null,
-        error:null
+    constructor(props){
+        super(props);
+
+        this.state ={
+            videos:[],
+            selectedVideo:null,
+            error:null
+        }
     }
+ 
 
     onTermSubmit =async term=>{
       await youtube.get('/search',{
@@ -31,15 +36,19 @@ class App extends React.Component{
            
             (error) => { 
             this.setState({error:error});
-            //console.log(this.state.error);
+            console.log(this.state.error);
          }
         );
            
       
     }
+    scroll=()=> {
+        window.scrollTo({top: 0, left: 0, behavior: 'smooth' });
+      }
         
-    onSelectedVideo=(video)=>{
+    onSelectedVideo=(video,ref)=>{
          this.setState({selectedVideo:video});
+         this.scroll();
     }
 
     render(){
@@ -75,6 +84,7 @@ class App extends React.Component{
                      
                        <div className="video-list">
                             <VideoList
+                             
                                 onSelectedVideo={this.onSelectedVideo}
                                  listofVideos={this.state.videos}
                             />

@@ -21,12 +21,12 @@ class DefaultDetail extends React.Component{
 
 setOptions =(response)=>{
  
-    const firstItem =this.state.startURL.concat(response.data.items[12].id);
-    const secondItem =this.state.startURL.concat(response.data.items[13].id);
-    const thirdItem =this.state.startURL.concat(response.data.items[17].id);
+const firstItem =this.state.startURL.concat(response.data.items[12].id);
+const secondItem =this.state.startURL.concat(response.data.items[13].id);
+const thirdItem =this.state.startURL.concat(response.data.items[17].id);
 // basicURl + path to playlist and after that push it to the array, after that data will be read from state of component
 //console.log(secondItem);
-    const array = [firstItem,secondItem,thirdItem];
+const array = [firstItem,secondItem,thirdItem];
 
 
       this.setState({
@@ -38,7 +38,7 @@ setOptions =(response)=>{
             playlistDescription3:response.data.items[17].snippet.description,
             url:array 
       });
-           // console.log(this.state.url);
+            console.log(this.state.url);
   }
 
        
