@@ -41,8 +41,10 @@ body{
 }
 .content-header
 {
-    width: 100vw;
+    cursor: pointer;
+
 }
+
 .title-header
 {
     color: white;
@@ -50,6 +52,7 @@ body{
     padding-left:30px;
     padding-top: 20px;
     filter: drop-shadow(5px 3px rgba(130,0,190,1));
+    width: auto;
 }
 .search-bar-container
 {
