@@ -38,7 +38,7 @@ const array = [firstItem,secondItem,thirdItem];
             playlistDescription3:response.data.items[17].snippet.description,
             url:array 
       });
-            console.log(this.state.url);
+           // console.log(this.state.url);
   }
 
        
